@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="School Assistant — An AI-powered chatbot for Indian school business segments. Ask about fees, admissions, policies, and more." />
+  <title>School Assistant — Micro LLM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="logo-wrap">
+        <div class="logo-icon">SA</div>
+        <div>
+          <div class="logo-title">School Assistant</div>
+          <div class="logo-sub">Micro-LLM · AI Powered</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section" style="display:none">
+      <div class="sidebar-label">Gemini API Key</div>
+      <div class="api-input-wrap">
+        <input
+          type="password"
+          id="gemini-key"
+          class="api-input"
+          placeholder="Paste API key for cloud mode..."
+          value="AIzaSyCwwLWXs98prdL6sFqt28a0JiHAaQa3ZAQ"
+        />
+        <div class="api-indicator" id="api-indicator" title="Cloud mode active"></div>
+      </div>
+      <div class="api-hint">Remove key to use local PyTorch engine</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Recent Chats</div>
+      <div class="history-list" id="history-list">
+        <!-- JS will inject sessions here -->
+      </div>
+      <button class="new-chat-btn" id="new-chat-btn">+ New Chat</button>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Quick Start</div>
+      <div class="chips" id="chips">
+        <div class="chip" data-q="What is the fee for Class 8?">Fee for Class 8?</div>
+        <div class="chip" data-q="Can I pay fees in installments?">Pay in installments?</div>
+        <div class="chip" data-q="When do admissions open?">Admissions open?</div>
+        <div class="chip" data-q="What documents are required for admission?">Admission documents?</div>
+        <div class="chip" data-q="Is transport available?">Bus service?</div>
+        <div class="chip" data-q="What is the attendance rule?">Attendance rule?</div>
+        <div class="chip" data-q="Who is the principal?">Who is principal?</div>
+        <div class="chip" data-q="When are final exams scheduled?">Exam schedule?</div>
+        <div class="chip" data-q="What are the school timings?">School timings?</div>
+        <div class="chip" data-q="Is there a library?">Library facility?</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section" style="display:none">
+      <div class="sidebar-label">Model Status</div>
+      <div class="model-card" id="model-card">
+        <div class="model-card-row">
+          <span class="model-label">Status</span>
+          <span class="model-value" id="model-status">
+            <span class="status-dot"></span> Loading...
+          </span>
+        </div>
+        <div class="model-card-row">
+          <span class="model-label">Model</span>
+          <span class="model-value" id="model-file">—</span>
+        </div>
+        <div class="model-card-row">
+          <span class="model-label">Parameters</span>
+          <span class="model-value" id="model-params">—</span>
+        </div>
+        <div class="model-card-row">
+          <span class="model-label">Train Loss</span>
+          <span class="model-value" id="model-loss">—</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-bottom">
+      <button class="clear-btn" id="clear-btn">Clear Chat</button>
+    </div>
+  </aside>
+
+
+
+  <!-- Main Chat Area -->
+  <main class="main">
+    <!-- Header -->
+    <header class="chat-header">
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle Sidebar" title="Toggle Sidebar">☰</button>
+      <div class="header-info">
+        <h1 class="header-title">School Assistant</h1>
+        <p class="header-sub">Ask me anything about fees, admissions, policies, or school life</p>
+      </div>
+    </header>
+
+    <!-- Messages -->
+    <section class="messages-wrap" id="messages-wrap">
+      <!-- Welcome screen shown when empty -->
+      <div class="welcome-screen" id="welcome-screen">
+        <div class="welcome-icon"></div>
+        <h2 class="welcome-title">How can I help you today?</h2>
+        <p class="welcome-sub">I'm your intelligent school assistant. I can answer questions about fees, admissions, rules, schedules, and more.</p>
+        <div class="welcome-chips">
+          <div class="welcome-chip" data-q="How can I apply for admission?">How do I apply for admission?</div>
+          <div class="welcome-chip" data-q="What is the annual fee for Class 8?">What is the fee for Class 8?</div>
+          <div class="welcome-chip" data-q="What are the school timings?">What are the school timings?</div>
+          <div class="welcome-chip" data-q="Is transport available?">Is transport available?</div>
+        </div>
+      </div>
+
+      <!-- Chat messages injected here via JS -->
+      <div class="messages" id="messages"></div>
+    </section>
+
+    <!-- Input Bar -->
+    <footer class="input-bar">
+      <div class="input-wrap">
+        <textarea
+          id="user-input"
+          class="user-input"
+          placeholder="Ask a question about the school..."
+          rows="1"
+          autocomplete="off"
+        ></textarea>
+        <button class="send-btn" id="send-btn" aria-label="Send message">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

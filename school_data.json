@@ -1,0 +1,463 @@
+{
+  "General": [
+    {
+      "question": "When does the new academic year start?",
+      "answer": "The new academic year begins on June 10th every year. Students are expected to report on the first day with all required stationery and books.",
+      "variations": ["When does school start?", "Academic year start date?", "When will school reopen?", "When does the session begin?", "School start date?", "Session start date?", "When do classes start?", "School reopening date?", "First day of school?"]
+    },
+    {
+      "question": "What are the school timings?",
+      "answer": "School timings are from 8:00 AM to 2:00 PM, Monday to Saturday. Students are advised to arrive by 7:50 AM to avoid being marked late.",
+      "variations": ["What time does school start and end?", "School hours?", "When does school open?", "Till what time is school?", "School timing?", "What are the timings?", "What time school starts?", "What time does school end?", "School opening time?", "School closing time?", "Daily school hours?"]
+    },
+    {
+      "question": "Is school open tomorrow?",
+      "answer": "School closure announcements are made through the official school app and SMS alerts. Please check the notice board or contact the school office at +91-XXXXXXXXXX for tomorrow's schedule.",
+      "variations": ["Will there be school tomorrow?", "Is tomorrow a holiday?", "Is school closed tomorrow?", "School tomorrow or not?", "Holiday tomorrow?", "Tomorrow school open or closed?", "Any holiday tomorrow?"]
+    },
+    {
+      "question": "When is the Parent-Teacher Meeting?",
+      "answer": "PTM (Parent-Teacher Meeting) is held quarterly, typically after each term exam. Dates are communicated two weeks in advance via the school diary and the official app.",
+      "variations": ["When is PTM?", "Next parent teacher meeting date?", "PTM schedule?", "When is the next PTM?", "PTM dates?", "When do parents meet teachers?", "Teacher parent meeting?", "PTM timing?", "How often is PTM held?"]
+    },
+    {
+      "question": "Is there school on Saturday?",
+      "answer": "Yes, school is open on Saturdays from 8:00 AM to 12:00 PM for regular classes. The second and fourth Saturdays of each month may be declared holidays based on the academic calendar.",
+      "variations": ["Does school run on Saturdays?", "Saturday school timings?", "Is Saturday a working day?", "School on Saturday?", "Saturday classes?", "Is school open Saturday?", "Do we have school on Saturday?", "Second Saturday holiday?"]
+    }
+  ],
+  "Fees": [
+    {
+      "question": "What is the annual fee for Class 1?",
+      "answer": "The annual tuition fee for Class 1 is Rs.35,000. This includes tuition, smart class usage, and basic stationery kit. Uniforms and books are charged separately.",
+      "variations": ["Fee for Class 1?", "How much is Class 1 fee?", "1st standard annual fee?", "First class fee?", "Class 1 fees?", "Fee structure for Class 1?", "How much for Class 1?", "Grade 1 fee?"]
+    },
+    {
+      "question": "What is the annual fee for Class 2?",
+      "answer": "The annual tuition fee for Class 2 is Rs.36,000. This includes tuition and smart class access. Books and uniforms are purchased separately.",
+      "variations": ["Fee for Class 2?", "Class 2 fees?", "2nd standard fee?", "How much is Class 2?"]
+    },
+    {
+      "question": "What is the annual fee for Class 3?",
+      "answer": "The annual tuition fee for Class 3 is Rs.37,000. Includes tuition and library access. Books and uniforms are extra.",
+      "variations": ["Fee for Class 3?", "Class 3 fees?", "3rd standard fee?", "How much is Class 3?"]
+    },
+    {
+      "question": "What is the annual fee for Class 4?",
+      "answer": "The annual tuition fee for Class 4 is Rs.38,000. Includes tuition, library, and sports activities. Books and uniforms are purchased separately.",
+      "variations": ["Fee for Class 4?", "Class 4 fees?", "4th standard fee?", "How much is Class 4?"]
+    },
+    {
+      "question": "What is the annual fee for Class 5?",
+      "answer": "The annual tuition fee for Class 5 is Rs.42,000. This covers tuition, lab access, and library charges. Books and uniforms are purchased separately.",
+      "variations": ["Fee for Class 5?", "Class 5 fees?", "5th standard fee?", "Fee for 5th class?", "How much is 5th class fee?", "Annual fee for 5th grade?", "Class five fee?", "Grade 5 fee?"]
+    },
+    {
+      "question": "What is the annual fee for Class 6?",
+      "answer": "The annual tuition fee for Class 6 is Rs.45,000. This includes tuition, computer lab access, and library. Books and uniforms are extra.",
+      "variations": ["Fee for Class 6?", "Class 6 fees?", "6th standard fee?", "How much is Class 6?"]
+    },
+    {
+      "question": "What is the annual fee for Class 7?",
+      "answer": "The annual tuition fee for Class 7 is Rs.47,000. Includes lab access, library, and co-curricular activities. Books and uniforms are purchased separately.",
+      "variations": ["Fee for Class 7?", "Class 7 fees?", "7th standard fee?", "How much is Class 7?"]
+    },
+    {
+      "question": "What is the annual fee for Class 8?",
+      "answer": "The annual tuition fee for Class 8 is Rs.50,000. Lab fees, library, and co-curricular activities are included. Books and uniforms are extra.",
+      "variations": ["What is the fee for Class 8?", "8th standard fee?", "Class 8 annual charges?", "Class 8 fees?", "Fee for 8th class?", "How much is Class 8?", "Annual fee for Class 8?", "8th class fee?", "Class eight fee?", "Fees for Class 8?"]
+    },
+    {
+      "question": "What is the annual fee for Class 9?",
+      "answer": "The annual tuition fee for Class 9 is Rs.54,000. This includes lab access, library charges, and co-curricular fees. Books and uniforms are purchased separately.",
+      "variations": ["Class 9 fee?", "9th standard annual fee?", "How much is Class 9?", "Class 9 fees?", "Fee for 9th standard?", "9th class charges?", "Annual fee for Class 9?", "Class nine fee?"]
+    },
+    {
+      "question": "What is the annual fee for Class 10?",
+      "answer": "The annual fee for Class 10 is Rs.58,000. This includes board exam registration charges, practical lab fees, and pre-board examination fees.",
+      "variations": ["Class 10 fee?", "10th standard annual fee?", "How much is Class 10?", "Board class fee?", "Class 10 fees?", "Fee for 10th standard?", "10th class charges?", "Annual fee for Class 10?", "CBSE Class 10 fee?", "Class ten fee?", "SSC fee?", "Matriculation fee?"]
+    },
+    {
+      "question": "What is the annual fee for Class 11?",
+      "answer": "The annual fee for Class 11 is Rs.60,000. It includes tuition, lab/practical sessions, and career counselling. Books and uniforms are extra.",
+      "variations": ["Class 11 fee?", "11th standard fee?", "Junior college fee?", "How much is Class 11?", "Class 11 fees?", "Annual fee for Class 11?"]
+    },
+    {
+      "question": "What is the annual fee for Class 12?",
+      "answer": "The annual fee for Class 12 is Rs.62,000. It includes CBSE board registration, practicals, and career counselling sessions.",
+      "variations": ["Class 12 fee?", "12th standard fee?", "Senior secondary fee?", "Fee for Class 12?", "12th class charges?", "Annual fee for Class 12?", "HSC fee?", "Class 12 fees?", "Fee for 12th?", "How much for Class 12?", "Board class 12 fee?", "Plus two fee?"]
+    },
+    {
+      "question": "Can I pay fees in installments?",
+      "answer": "Yes, the school allows fee payment in three installments: the first in April, the second in August, and the third in December. An installment form must be submitted to the accounts office.",
+      "variations": ["Is installment available for fees?", "Can fees be paid in parts?", "EMI for school fee?", "Fee in 3 installments?", "Can I pay in installments?", "Fee payment in parts?", "Pay fee in 3 parts?", "Fee installment option?", "Can I split the fee?", "Pay fees in EMI?"]
+    },
+    {
+      "question": "What happens if fees are paid late?",
+      "answer": "A late fee of Rs.100 per day is charged if payment is not made by the due date. After 30 days of non-payment, the student's name may be struck off the rolls.",
+      "variations": ["What is the late fee penalty?", "Late payment charges?", "Penalty for delayed fee?", "Late fee fine?", "What if I miss fee deadline?", "Overdue fee charges?", "Late fee policy?", "Fine for not paying fee on time?"]
+    },
+    {
+      "question": "What are the payment modes available?",
+      "answer": "Fees can be paid online via the school portal using UPI, Net Banking, or Debit/Credit card. Cash and cheque payments are accepted at the accounts office between 9:00 AM and 1:00 PM.",
+      "variations": ["How can I pay fees?", "Payment methods accepted?", "Online fee payment?", "Can I pay by UPI?", "Fee payment options?", "How to pay school fees?", "Can I pay online?", "Cheque payment for fees?", "Cash payment accepted?"]
+    },
+    {
+      "question": "Is there a fee concession or scholarship?",
+      "answer": "Yes, the school offers fee concessions for students who score above 90% in the annual exam and for economically weaker sections under the RTE Act. Apply at the admin office before March 31st.",
+      "variations": ["Scholarship available?", "Fee concession?", "Reduction in fees?", "RTE fee waiver?", "Fee waiver available?", "Merit scholarship?", "EWS fee concession?", "Discount on fees?", "Is there any free admission?", "Scholarship for good students?"]
+    },
+    {
+      "question": "What is the admission fee?",
+      "answer": "The one-time non-refundable admission registration fee is Rs.1,500. This is separate from the annual tuition fee and covers administrative and documentation charges.",
+      "variations": ["How much is the registration fee?", "Admission form fee?", "Enrolment fee?", "One-time admission charges?", "Registration charges?", "Form fee?", "How much to register?", "Admission registration cost?", "Application fee?"]
+    },
+    {
+      "question": "Is the security deposit refundable?",
+      "answer": "Yes, a refundable caution deposit of Rs.5,000 is collected at the time of admission. It is returned after the student completes their schooling or leaves the school, provided all dues are cleared.",
+      "variations": ["Is security deposit returned?", "Caution money refund?", "Is caution deposit refundable?", "Security deposit policy?", "Is deposit refunded?", "Caution deposit amount?", "Refund of security deposit?", "Will I get back the deposit?"]
+    }
+  ],
+  "Academic": [
+    {
+      "question": "What subjects are taught in Class 9?",
+      "answer": "Class 9 covers: Mathematics, Science (Physics, Chemistry, Biology), Social Science, English, Hindi, and one elective subject. Practical sessions are conducted for Science throughout the year.",
+      "variations": ["Class 9 subjects?", "Which subjects in 9th standard?", "Subjects for Class 9?", "9th class subjects?", "Syllabus for Class 9?", "What is taught in 9th?", "Core subjects in Class 9?", "Class 9 curriculum?", "9th subject list?"]
+    },
+    {
+      "question": "What subjects are taught in Class 10?",
+      "answer": "Class 10 covers: Mathematics, Science, Social Science, English, Hindi, and one optional subject. Practical examinations are conducted for Science.",
+      "variations": ["Class 10 subjects?", "Which subjects in 10th standard?", "CBSE Class 10 syllabus?", "What do 10th students study?", "Subjects for Class 10?", "10th class subjects?", "Syllabus for Class 10?", "What is taught in 10th?", "Core subjects in Class 10?", "10th subject list?", "Board exam subjects?"]
+    },
+    {
+      "question": "What subjects are taught in Class 11?",
+      "answer": "Class 11 offers three streams: Science (Physics, Chemistry, Maths/Biology, English), Commerce (Accountancy, Business Studies, Economics, English), and Arts (History, Political Science, Geography, English). Students choose one stream at admission.",
+      "variations": ["Class 11 subjects?", "11th standard subjects?", "What streams are available in Class 11?", "Science or commerce in Class 11?", "Class 11 syllabus?", "11th class subjects?"]
+    },
+    {
+      "question": "What subjects are taught in Class 12?",
+      "answer": "Class 12 follows the same stream chosen in Class 11: Science, Commerce, or Arts. CBSE board examinations are conducted in February-March for all core and elective subjects.",
+      "variations": ["Class 12 subjects?", "12th standard subjects?", "Class 12 syllabus?", "12th class curriculum?", "Subjects in senior secondary?"]
+    },
+    {
+      "question": "What subjects are taught in Class 8?",
+      "answer": "Class 8 covers: Mathematics, Science, Social Science, English, Hindi, Sanskrit, and Computer Science.",
+      "variations": ["Class 8 subjects?", "8th class subjects?", "Syllabus for Class 8?", "What is taught in 8th standard?", "Class 8 curriculum?"]
+    },
+    {
+      "question": "When are the final exams scheduled?",
+      "answer": "Annual final examinations for Classes 1 to 9 are held in March. CBSE board examinations for Class 10 and Class 12 begin in February as per the CBSE schedule.",
+      "variations": ["When are exams?", "Exam date?", "Annual exam schedule?", "When do final exams start?", "Exam timetable?", "Final exam date?", "Board exam date?", "Exam schedule?", "When do exams begin?", "Examination schedule?"]
+    },
+    {
+      "question": "What is the grading system?",
+      "answer": "The school follows the CBSE grading system: A1 (91-100), A2 (81-90), B1 (71-80), B2 (61-70), C1 (51-60), C2 (41-50), D (33-40), and E below 33.",
+      "variations": ["How are students graded?", "CBSE grading scale?", "Marks to grade conversion?", "Grading system?", "Grade criteria?", "Marking scheme?", "Pass marks?", "What grade is 75%?", "Grade calculation?"]
+    },
+    {
+      "question": "What co-curricular activities are available?",
+      "answer": "The school offers cricket, football, chess, dance, music, art and craft, debate club, science club, and NCC. Students are encouraged to participate in at least one activity.",
+      "variations": ["Extra-curricular activities?", "Sports available in school?", "Clubs in school?", "What activities does school offer?", "After school activities?", "School clubs?", "NCC in school?", "Dance classes?", "Sports events?"]
+    },
+    {
+      "question": "What board does the school follow?",
+      "answer": "The school is affiliated with the Central Board of Secondary Education (CBSE), New Delhi. Our affiliation number is XXXXXXX.",
+      "variations": ["Is the school CBSE?", "Which board?", "CBSE or ICSE?", "School board affiliation?", "Is it CBSE school?", "Which curriculum?", "CBSE affiliated school?"]
+    },
+    {
+      "question": "When are results declared?",
+      "answer": "Results for term exams are declared within two weeks of the last exam. Annual results are published in April. Students can check results on the school portal or collect physical mark sheets from the office.",
+      "variations": ["When will results come?", "Result announcement date?", "Where to check results?", "Result date?", "When is result out?", "Exam result date?", "When will I get my result?", "How to check result?", "Report card date?"]
+    }
+  ],
+  "Admissions": [
+    {
+      "question": "How can I apply for admission?",
+      "answer": "Admissions can be done online through the school's official website or in person at the school office. The process involves: (1) Collect the application form, (2) Submit with required documents, (3) Entrance test/interaction, and (4) Pay admission fee of Rs.1,500.",
+      "variations": ["Where to apply for admission?", "Admission process?", "How to enrol my child?", "Online admission?", "Steps for admission", "How to join the school", "Enrollment procedure", "Admission procedure", "How to get admission", "School admission guide?"]
+    },
+    {
+      "question": "When do admissions open?",
+      "answer": "Admissions open every year in January for the upcoming academic session starting in June. Early applications are encouraged as seats are limited.",
+      "variations": ["Admission start date?", "When can I apply for admission?", "Enrollment date?", "When does admission begin?", "When do admissions start?", "Admission opening date?"]
+    },
+    {
+      "question": "What documents are required for admission?",
+      "answer": "Required documents include: Birth certificate, last year's report card or Transfer Certificate (TC), Aadhaar card of parent and child, passport-size photographs (4), and caste/income certificate if applying under RTE.",
+      "variations": ["Documents needed for admission?", "What papers to submit?", "List of required documents?", "Documents for admission?", "Admission documents list?", "What certificates are needed?", "Papers required for admission?", "Documents to bring for admission?", "Documents checklist for admission?"]
+    },
+    {
+      "question": "What is the age criteria for Class 1?",
+      "answer": "A child must be at least 6 years old as of June 1st of the admission year to be eligible for Class 1 admission, as per CBSE guidelines.",
+      "variations": ["Age limit for Class 1?", "Minimum age for first standard?", "How old should my child be for Class 1?", "Age requirement for Class 1?", "Age for LKG admission?", "Age limit for nursery?"]
+    },
+    {
+      "question": "Are seats available under RTE?",
+      "answer": "Yes, 25% of seats in Class 1 are reserved under the Right to Education Act for economically weaker section students. Apply with income proof before February 28th.",
+      "variations": ["RTE seats available?", "Free seats under RTE?", "How to apply through RTE?", "EWS admission?", "RTE admission process?", "Free admission under RTE?", "Seats for poor students?", "RTE quota?", "Government free admission?"]
+    }
+  ],
+  "Policies": [
+    {
+      "question": "What is the attendance requirement?",
+      "answer": "As per CBSE norms, students must maintain a minimum of 75% attendance to be eligible for the annual examinations. Students with less than 75% may be detained.",
+      "variations": ["Minimum attendance needed?", "Attendance policy?", "How many days can I miss school?", "75% attendance rule?", "Attendance requirement?", "What is the attendance rule?", "Minimum attendance percentage?", "Can I miss school?", "Attendance criteria?", "Mandatory attendance?"]
+    },
+    {
+      "question": "What is the uniform policy?",
+      "answer": "Students must wear the prescribed school uniform every day. Monday to Thursday: white shirt, navy blue trousers or skirt and school tie. Friday: House-colour PT uniform.",
+      "variations": ["Dress code?", "What uniform should students wear?", "School uniform details?", "Uniform rules?", "What clothes to wear?", "School dress?", "Uniform color?", "What is the school uniform?", "Uniform day wise?", "Friday uniform?", "Sports uniform?"]
+    },
+    {
+      "question": "What is the mobile phone policy?",
+      "answer": "Mobile phones are strictly prohibited inside the school premises for students. If a student is found with a phone, it will be confiscated and returned only to parents after a formal meeting.",
+      "variations": ["Can students bring phones?", "Mobile phone rule?", "Phone policy in school?", "Cell phone allowed?", "Is phone allowed?", "Mobile in school?", "Phone confiscation?", "Can I carry phone to school?", "Phone rules?"]
+    },
+    {
+      "question": "What is the leave application procedure?",
+      "answer": "For planned leave, submit an application in the school diary signed by a parent at least one day in advance. For medical leave, a doctor's certificate must be submitted upon return.",
+      "variations": ["How to apply for leave?", "Leave application process?", "Absence procedure?", "How to take leave?", "Leave letter format?", "Student leave rules?", "Inform school about absence?", "Sick leave process?"]
+    },
+    {
+      "question": "What is the anti-bullying policy?",
+      "answer": "The school has a zero-tolerance policy for bullying, ragging, or discrimination. Any student found guilty of bullying will face disciplinary action including suspension.",
+      "variations": ["Bullying rules?", "Is ragging allowed?", "Anti-bullying?", "What to do if bullied?", "Bullying policy?", "Ragging policy?", "What if my child is bullied?", "Zero tolerance policy?"]
+    },
+    {
+      "question": "What is the discipline policy?",
+      "answer": "Students are expected to maintain respectful behaviour. Repeated misconduct is addressed through: verbal warning, parent meeting, and suspension.",
+      "variations": ["Discipline rules?", "What happens if students misbehave?", "Code of conduct?", "Student behaviour policy?", "Misconduct policy?", "Punishment for misbehaviour?", "Disciplinary action?", "Suspension policy?"]
+    }
+  ],
+  "Facilities": [
+    {
+      "question": "Is transport available?",
+      "answer": "Yes, the school provides bus transport covering major routes across the city and nearby localities. A route map is available at the admin office and on the school website.",
+      "variations": ["Does school have buses?", "Is school bus available?", "Transport facility?", "Can my child take the school bus?", "Bus service?", "School transport?", "Is bus available?", "Does school provide transport?", "School van available?", "School bus routes?", "Is there a bus service?"]
+    },
+    {
+      "question": "What is the transport fee?",
+      "answer": "Transport fees vary by distance: Rs.10,000 per year for routes within 5 km and Rs.20,000 per year for routes between 5 to 15 km. This is payable annually or in two installments.",
+      "variations": ["Bus fee?", "How much is transport?", "School bus charges?", "Cost of school transport?", "Transport charges?", "Bus fare?", "How much for school bus?", "Transport fee per month?", "Bus fee structure?", "Annual transport cost?", "School van charges?"]
+    },
+    {
+      "question": "Does the school provide lunch?",
+      "answer": "Yes, a nutritious optional meal plan is available through the school canteen. A monthly meal subscription costs Rs.1,200. Students can also bring home-cooked lunch.",
+      "variations": ["Is mid-day meal available?", "Canteen facility?", "School lunch service?", "Does school serve food?", "Meal plan available?", "Food in school?", "School canteen?", "Is lunch provided?", "Tiffin service?"]
+    },
+    {
+      "question": "Is there a library?",
+      "answer": "Yes, the school has a well-stocked library with over 10,000 books, including NCERT textbooks, reference books, encyclopaedias, and children's literature. Library cards are issued to all students.",
+      "variations": ["Does school have a library?", "Library facility?", "Can students borrow books?", "Library available?", "School library books?", "Library hours?", "Library card?", "Book borrowing facility?"]
+    },
+    {
+      "question": "Is there a computer lab?",
+      "answer": "Yes, the school has a modern computer lab with 60 computers and high-speed internet access. Computer Science is a compulsory subject from Class 6 onwards.",
+      "variations": ["Computer lab available?", "IT lab in school?", "Does school have computers?", "Computer room?", "Is there internet?", "IT facility?", "Programming lab?", "Computer education?"]
+    },
+    {
+      "question": "What sports facilities are available?",
+      "answer": "The school has a cricket ground, basketball court, volleyball court, and an indoor badminton court. Physical Education is a part of the daily schedule.",
+      "variations": ["Sports grounds?", "Playground available?", "What sports can students play?", "Sports infrastructure?", "Cricket ground?", "Basketball court?", "Indoor sports?", "PE facilities?", "Playing field?"]
+    },
+    {
+      "question": "Is there CCTV surveillance?",
+      "answer": "Yes, the entire school campus, including classrooms, corridors, and the main gate, is under 24/7 CCTV surveillance for student safety.",
+      "variations": ["Is the school safe?", "CCTV in school?", "Security cameras?", "Campus security?", "Surveillance cameras?", "Safety measures?", "School security?", "Camera monitoring?"]
+    },
+    {
+      "question": "Is there a medical room?",
+      "answer": "Yes, the school has a fully equipped medical room staffed by a trained nurse from 8:00 AM to 2:00 PM on all working days. First aid is available for minor injuries and illnesses.",
+      "variations": ["Medical room in school?", "Is nurse available?", "First aid facility?", "School health room?", "Does school have a doctor?", "Medical facility?", "School nurse?", "First aid at school?", "Who handles emergencies?"]
+    }
+  ],
+  "Staff": [
+    {
+      "question": "How can I contact the school office?",
+      "answer": "You can reach the school office at +91-XXXXXXXXXX or email us at info@school.com. Office hours are Monday to Saturday, 8:00 AM to 3:00 PM.",
+      "variations": ["School phone number?", "Contact school?", "Office email?", "How to call school?", "School contact details?", "Office number?", "School email id?", "How to reach school?", "School address?", "Contact information?", "Admin office number?", "School helpline?"]
+    },
+    {
+      "question": "Who is the principal?",
+      "answer": "The Principal of the school is Mrs. Sharma. She holds a M.Ed. degree and has over 20 years of experience in education. You can schedule an appointment through the admin office.",
+      "variations": ["Principal name?", "Who is the head of school?", "Meet the principal?", "School principal?", "Name of principal?", "Who runs the school?", "Headmaster name?", "Principal contact?", "Who is school incharge?", "Head teacher name?", "Principal details?"]
+    },
+    {
+      "question": "How do I contact my child's class teacher?",
+      "answer": "Class teacher contact details are shared at the start of the academic year. You may also contact them via the school app's messaging feature or request a meeting through the admin desk.",
+      "variations": ["How to reach class teacher?", "Class teacher phone number?", "Contact teacher?", "Teacher contact?", "How to speak to teacher?", "Reach out to teacher?", "Teacher meeting?", "How to talk to class teacher?"]
+    },
+    {
+      "question": "Who do I contact for fee-related issues?",
+      "answer": "For all fee-related queries, contact the Accounts Office directly at accounts@school.com or visit Room 3 on the ground floor between 9:00 AM and 1:00 PM on working days.",
+      "variations": ["Fee department contact?", "Accounts office?", "Who handles fees?", "Fee query contact?", "Where to pay fees?", "Fee office?", "Accounts department?", "Fee complaint?", "Who to ask about fees?"]
+    }
+  ],
+  "HR": [
+    {
+      "question": "How many casual leaves do PRT teachers get?",
+      "answer": "PRT (Primary Teachers) are granted 12 Casual Leaves per academic year. Earned Leaves are calculated at 1 per month and can be accumulated up to a maximum of 30 days.",
+      "variations": ["Teacher leave policy?", "How many CLs for primary teachers?", "PRT casual leave?", "Teacher CL?", "Leave for teachers?", "How many days leave for teachers?", "Teacher leave entitlement?", "Staff leave policy?", "CL for PRT?"]
+    },
+    {
+      "question": "When are staff salaries credited?",
+      "answer": "Staff salaries are disbursed on the last working day of every month directly to their salary accounts via NEFT. Payslips are available on the staff portal.",
+      "variations": ["Payday for staff?", "When is the salary credited?", "Salary date for teachers?", "When do teachers get paid?", "Staff payment date?", "Salary disbursement date?", "When is payroll processed?", "Teacher salary date?", "NEFT salary date?"]
+    },
+    {
+      "question": "What is the maternity leave policy?",
+      "answer": "Female staff are entitled to 26 weeks of paid maternity leave as per the Maternity Benefit Act. An application must be submitted at least 60 days before the expected date.",
+      "variations": ["Maternity leave for teachers?", "How many days maternity leave?", "Paid maternity leave?", "Maternity benefit?", "Maternity policy?", "Pregnancy leave?", "Leave for new mother?", "Maternity leave duration?"]
+    },
+    {
+      "question": "What is the protocol for summer vacation for non-teaching staff?",
+      "answer": "Non-teaching staff including peons, lab assistants, and administrative staff operate on a rotational duty schedule during the May-June summer vacation.",
+      "variations": ["Summer holiday for non-teaching staff?", "Do peons get summer vacation?", "Admin staff during summer break?", "Non-teaching staff leave?", "Office staff summer schedule?", "Support staff summer duty?"]
+    },
+    {
+      "question": "How do I apply for earned leave?",
+      "answer": "Earned leave applications must be submitted to the principal's office at least 3 working days in advance through the school's leave management portal or in hard copy via the admin desk.",
+      "variations": ["How to apply for EL?", "Earned leave process?", "EL application?", "Leave management?", "How to submit leave application?", "Leave approval process?", "Apply for leave?", "Staff leave application?"]
+    }
+  ],
+  "Health": [
+    {
+      "question": "Is there a school nurse or medical room?",
+      "answer": "Yes, the school has a fully equipped medical room staffed by a trained nurse from 8:00 AM to 2:00 PM on all working days. First aid is available for minor injuries and illnesses.",
+      "variations": ["Medical room in school?", "Is nurse available?", "First aid facility?", "School health room?", "Does school have a doctor?", "Medical facility?", "Health room?", "School nurse?", "First aid at school?", "Who handles emergencies?", "Medical help in school?"]
+    },
+    {
+      "question": "What happens in a medical emergency at school?",
+      "answer": "In case of a medical emergency, the school nurse is called immediately. Parents are notified within 10 minutes. If required, the student is taken to the nearest empanelled hospital. Emergency contact numbers are on file for every student.",
+      "variations": ["Medical emergency procedure?", "What if student falls sick?", "Emergency protocol?", "What if child gets hurt?", "Emergency in school?", "Accident in school?", "Child injured at school?", "Emergency contact?", "What to do if child is sick in school?"]
+    },
+    {
+      "question": "Is there a health check-up for students?",
+      "answer": "Yes, an annual health and dental check-up camp is organized in August for all students in collaboration with a local hospital. Parents receive a health report card for their child.",
+      "variations": ["Annual health check?", "Dental check-up?", "Medical check-up for students?", "Health camp in school?", "Doctor visit for students?", "Annual check-up?", "Student health check?", "Eye test in school?", "Health screening?"]
+    },
+    {
+      "question": "What is the policy for sick students attending school?",
+      "answer": "Students with fever, contagious illness, or Covid-like symptoms must not attend school. A medical certificate is required for absence of more than 3 days. The school reserves the right to send home an unwell student.",
+      "variations": ["Can sick student come to school?", "Sick leave policy?", "Fever policy?", "What if student is unwell?", "Contagious illness policy?", "Should sick child attend school?", "Medical certificate needed?", "Sick day policy?"]
+    },
+    {
+      "question": "Does the school have a tie-up with any hospital?",
+      "answer": "Yes, the school has a tie-up with City Care Hospital, 2 km from campus. Emergency cases are taken there. The school also has ambulance access on call.",
+      "variations": ["Empanelled hospital?", "School hospital tie-up?", "Nearest hospital?", "Ambulance facility?", "Hospital for emergencies?", "Medical tie-up?", "Which hospital does school use?", "School ambulance?"]
+    }
+  ],
+  "Events": [
+    {
+      "question": "When is Annual Day celebrated?",
+      "answer": "Annual Day is celebrated every year in the month of December. It features cultural performances, prize distribution, and a special address by the principal. All parents are invited.",
+      "variations": ["Annual day date?", "When is school annual function?", "Prize distribution day?", "Annual function?", "When is annual day?", "School cultural event?", "Annual day celebration?", "Prize day?"]
+    },
+    {
+      "question": "When is Sports Day held?",
+      "answer": "Sports Day is held in January every year on the school grounds. Students from all classes participate in track and field events, relay races, and team sports. Parents are welcome to attend.",
+      "variations": ["Sports day date?", "Annual sports meet?", "School sports event?", "Sports week?", "Athletic events?", "Sports competition date?", "Running race event?", "Annual sports day?", "Sports meet?"]
+    },
+    {
+      "question": "Does the school participate in inter-school competitions?",
+      "answer": "Yes, the school actively participates in inter-school competitions for debate, science, sports, quiz, painting, and dance at the district and state levels. Selected students receive coaching from teachers.",
+      "variations": ["Inter school competitions?", "Does school go for competitions?", "External competitions?", "Debate competition?", "Science olympiad?", "Quiz competition?", "State level competition?", "District competition?", "Can I participate in competitions?"]
+    },
+    {
+      "question": "Is there a Science Exhibition?",
+      "answer": "Yes, the school organizes an annual Science and Innovation Exhibition in October. Students from Class 6 to 12 submit projects. Outstanding projects are sent to district-level exhibitions.",
+      "variations": ["Science fair?", "Science exhibition date?", "Innovation day?", "Project exhibition?", "Science project event?", "STEM fair?", "When is science event?", "Annual science exhibition?"]
+    },
+    {
+      "question": "Does the school celebrate Independence Day and Republic Day?",
+      "answer": "Yes, Independence Day (August 15) and Republic Day (January 26) are celebrated with great enthusiasm. Flag hoisting, cultural programs, and prizes for patriotic competitions are organized.",
+      "variations": ["Independence day celebration?", "Republic day event?", "National day celebration?", "Flag hoisting?", "August 15 program?", "January 26 school event?", "Patriotic events?", "National holiday celebration?"]
+    },
+    {
+      "question": "Is there a farewell for Class 12 students?",
+      "answer": "Yes, the school organizes a farewell ceremony for Class 12 students in March, hosted by Class 11 students. It includes cultural performances, mementos, and a message from the principal.",
+      "variations": ["Farewell party?", "Class 12 farewell?", "Graduation ceremony?", "Passing out ceremony?", "Senior farewell?", "Farewell for 12th students?", "Last day celebration?"]
+    }
+  ],
+  "ParentPortal": [
+    {
+      "question": "How do I access the parent portal?",
+      "answer": "The parent portal is accessible at portal.school.com. Log in using the credentials provided at the time of admission. You can view attendance, fee receipts, exam results, and school notices.",
+      "variations": ["How to login to parent portal?", "Parent app login?", "School portal access?", "How to see child's attendance online?", "Online school portal?", "Parent dashboard?", "App for parents?", "School app login?", "How to check results online?", "Parent login?"]
+    },
+    {
+      "question": "How do I download my child's fee receipt?",
+      "answer": "Fee receipts are available on the parent portal under the Payments section. Log in, select your child's profile, click on Fee History, and download the PDF receipt for any payment.",
+      "variations": ["Download fee receipt?", "Get fee payment receipt?", "Fee receipt online?", "Fee proof download?", "Payment receipt?", "Where is fee receipt?", "How to get fee certificate?", "Fee paid receipt?", "Invoice download?"]
+    },
+    {
+      "question": "How can I check my child's attendance online?",
+      "answer": "Attendance records are updated daily on the parent portal and mobile app. Log in and navigate to the Attendance section to view daily, weekly, or monthly attendance for your child.",
+      "variations": ["Check attendance online?", "View attendance?", "Attendance portal?", "Online attendance record?", "How many days attended?", "Absent days record?", "Attendance check?", "See attendance on app?", "Attendance percentage online?"]
+    },
+    {
+      "question": "Is there a mobile app for parents?",
+      "answer": "Yes, the school has an official mobile app available on Android and iOS. It provides real-time notifications, attendance updates, homework, circulars, and fee payment in one place.",
+      "variations": ["School app download?", "Parent mobile app?", "Android app for school?", "iOS school app?", "Google Play school app?", "School notification app?", "Mobile app features?", "App name for school?"]
+    },
+    {
+      "question": "How do I give feedback to the school?",
+      "answer": "Parents can submit feedback through the parent portal under the Feedback section, by email at feedback@school.com, or by dropping a written note at the admin office.",
+      "variations": ["How to give feedback?", "Complaint to school?", "Parent feedback form?", "School feedback?", "Suggestion to school?", "How to complain?", "Email feedback?", "Feedback portal?", "Parent suggestion?"]
+    }
+  ],
+  "Counseling": [
+    {
+      "question": "Is there a student counselor in school?",
+      "answer": "Yes, the school has a trained professional counselor available every Tuesday and Thursday from 9:00 AM to 12:00 PM. Students can visit voluntarily or be referred by their class teacher.",
+      "variations": ["Does school have counselor?", "Student counseling?", "Mental health support?", "Psychological support?", "Counselor in school?", "Who can students talk to?", "Emotional support?", "Student mental health?", "Guidance counselor?"]
+    },
+    {
+      "question": "How can a student join the Debate Club?",
+      "answer": "Debate Club selections happen in July every year. Students from Class 8 onwards can apply by submitting a short speech to the English department. Practice sessions happen every Friday.",
+      "variations": ["Join debate club?", "Debate club registration?", "Public speaking club?", "Elocution club?", "How to join debate team?", "Debate practice?", "English club?"]
+    },
+    {
+      "question": "Is there an NCC unit in the school?",
+      "answer": "Yes, the school has an NCC unit open to students from Class 9 onwards. Enrollment happens in June-July. NCC provides leadership, discipline training, and can benefit college admissions.",
+      "variations": ["NCC in school?", "How to join NCC?", "National Cadet Corps?", "NCC enrollment?", "NCC benefits?", "Is NCC available?", "NCC unit?", "Military training in school?"]
+    },
+    {
+      "question": "Is there a Student Council?",
+      "answer": "Yes, the school has an elected Student Council consisting of a Head Boy, Head Girl, and class representatives. Elections are held every July. Any student from Class 9-12 can contest.",
+      "variations": ["Student council?", "Head boy head girl election?", "School elections?", "Class representative?", "Student government?", "Council election?", "Leadership position?", "Prefect system?", "Student body?"]
+    },
+    {
+      "question": "What creative clubs does the school have?",
+      "answer": "The school has Art Club, Music Club, Drama Club, Photography Club, and Coding Club. Each club meets once a week and showcases work at the Annual Day and Science Exhibition.",
+      "variations": ["Art club?", "Music club?", "Drama club?", "Photography club?", "Coding club?", "Creative activities?", "Hobby clubs?", "What clubs are there?", "Extracurricular clubs?", "After school clubs?"]
+    }
+  ],
+  "Safety": [
+    {
+      "question": "What fire safety measures does the school have?",
+      "answer": "The school has fire extinguishers on every floor, smoke detectors in labs, and clearly marked emergency exits. Fire safety drills are conducted every semester for all students and staff.",
+      "variations": ["Fire safety?", "Fire drill?", "Emergency exit?", "Fire extinguisher?", "Fire safety drill?", "Is school safe from fire?", "Fire emergency?", "Safety drill?", "Fire alarm system?"]
+    },
+    {
+      "question": "Is drinking water safe in school?",
+      "answer": "The school provides RO-purified drinking water at multiple points across the campus. Water quality is tested monthly by a certified lab. Students are encouraged to carry personal reusable bottles.",
+      "variations": ["Drinking water facility?", "Clean water in school?", "RO water?", "Water purifier in school?", "Safe water?", "Water quality?", "Is water purified?", "Water filter?", "Drinking water?"]
+    },
+    {
+      "question": "What is the procedure for student pick-up and drop-off?",
+      "answer": "Students must be picked up from the school gate only by registered guardians. ID verification is done by security. No child is handed over to an unknown person. Parents must update guardian details in the app.",
+      "variations": ["Pick up procedure?", "Who can pick up child?", "Drop off policy?", "Child safety at gate?", "Guardian verification?", "Gate security policy?", "Who can collect child?", "Pickup authorization?", "Safety at gate?"]
+    },
+    {
+      "question": "What is the school's anti-ragging and bullying policy?",
+      "answer": "The school has a zero-tolerance policy against ragging, bullying, and discrimination. A dedicated Anti-Bullying Committee meets monthly. Students can report anonymously via the portal or a suggestion box outside the principal's office.",
+      "variations": ["Anti ragging policy?", "Bullying complaint?", "How to report bullying?", "Anti bullying?", "Ragging complaint?", "Zero tolerance policy?", "Report harassment?", "Bullying helpline?", "Anonymous complaint?"]
+    },
+    {
+      "question": "Is there a lost and found in school?",
+      "answer": "Yes, the school maintains a lost and found register at the admin office. Items found on campus are logged and kept for 30 days. Unclaimed items are donated to charity.",
+      "variations": ["Lost and found?", "Where to report lost items?", "Found something in school?", "Lost item in school?", "Missing property?", "Where is lost and found?", "Misplaced item?", "Lost belongings?"]
+    }
+  ]
+}
