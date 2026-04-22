@@ -1,43 +1,42 @@
-# Micro Language Model for Indian School Business Segments
-### Built from Scratch using PyTorch | Enterprise Agentic Backend
+# School Assistant AI | Enterprise RAG & Micro-LLM System
+### Built from Scratch with FastAPI, PyTorch, and Vanilla JS
 
 ---
 
 ## Table of Contents
-
 1. [Project Overview](#1-project-overview)
 2. [Tech Stack and Tools Used](#2-tech-stack-and-tools-used)
 3. [Project Folder Structure](#3-project-folder-structure)
 4. [Hybrid Agentic RAG Architecture](#4-hybrid-agentic-rag-architecture)
-5. [Tokenizer: BPE (Byte Pair Encoding)](#5-tokenizer-bpe-byte-pair-encoding)
-6. [Model Architecture: 7.2M Parameter Transformer](#6-model-architecture-72m-parameter-transformer)
-7. [Complete Step-by-Step Run Guide](#7-complete-step-by-step-run-guide)
+5. [Local Micro-LLM & Tokenizer](#5-local-micro-llm--tokenizer)
+6. [Complete Step-by-Step Run Guide](#6-complete-step-by-step-run-guide)
 
 ---
 
 ## 1. Project Overview
 
-This project features a **Micro Language Model (Micro-LLM)** built entirely from scratch using **PyTorch**, paired with a **High-Performance Streamlit Chat Interface**. 
-
-The system acts as a highly capable administrative chatbot for Indian School Business Segments, answering queries regarding:
+This project is a high-performance **Full-Stack Web Application** acting as an enterprise-grade administrative chatbot for a school. It elegantly answers user queries regarding:
 - General School Communication (timings, holidays)
 - Fees and Payments (tuition, installments)
-- Admissions and Enrollment (RTE, deadlines)
+- Admissions and Enrollment (deadlines, processes)
 - Policies and Rules (attendance, uniforms)
 
-The underlying AI is a **7.2 Million Parameter Decoder-only Transformer** trained on a curated synthetic dataset of school rules. To ensure maximum reliability and accuracy, it features a **Hybrid Agentic Retrieval-Augmented Generation (RAG)** pipeline. This pipeline uses **Semantic Vector Search** to find facts, synthesized via the **Google Gemini 2.5 Flash Cloud API**, with a robust **Local PyTorch offline fallback engine**.
+Originally a prototype, it has been transformed into a fully decoupled system with a **FastAPI backend** and a beautiful, professional **HTML/CSS/JS frontend** designed specifically for school administrators and teachers.
+
+The system relies on a **Hybrid Agentic Retrieval-Augmented Generation (RAG)** pipeline. It retrieves facts using **Semantic Vector Search**, synthesizes answers via **Google Gemini 2.5 Flash**, and has a completely offline, custom-trained **7.2M Parameter PyTorch Micro-LLM** fallback engine.
 
 ---
 
 ## 2. Tech Stack and Tools Used
 
-| Tool | Purpose |
-|------|---------|
-| **PyTorch (2.1+)** | Deep Learning framework: builds and trains the local neural network |
-| **Streamlit** | Powers the premium, responsive, dark-themed web chat interface |
-| **SentenceTransformers** | Generates fast semantic vector embeddings (`all-MiniLM-L6-v2`) for retrieval |
-| **Google Generative AI** | Connects to `gemini-2.5-flash` for high-end Agentic Cloud fact-synthesis |
-| **tiktoken** | OpenAI BPE tokenizer (Vocabulary Size: 50,257) for enterprise-grade text parsing |
+| Component | Technology Used | Purpose |
+|-----------|-----------------|---------|
+| **Backend API** | FastAPI, Uvicorn | High-speed async server for inference and RAG processing |
+| **Frontend** | Vanilla HTML5, CSS3, JS | Responsive, premium UI with zero heavy frameworks |
+| **Vector Search** | `SentenceTransformers` | `all-MiniLM-L6-v2` for semantic similarity scoring |
+| **Agentic Cloud** | Google Generative AI | Uses `gemini-2.5-flash` for high-quality fact synthesis |
+| **Local Fallback**| PyTorch (2.1+) | 7.2M parameter custom Transformer for offline generation |
+| **Database** | JSON (`school_data.json`) | Centralized, easy-to-edit knowledge base of school facts |
 
 ---
 
@@ -46,21 +45,19 @@ The underlying AI is a **7.2 Million Parameter Decoder-only Transformer** traine
 ```
 Mpr_llm/
 |
-+-- app.py                        Main Streamlit Web Application (Run this!)
++-- api.py                        Main FastAPI Backend Server (Run this!)
++-- school_data.json              Knowledge Base (Facts and Q&A)
+|
++-- frontend/                     Static Web Interface
+|   +-- index.html                Main Chat UI
+|   +-- style.css                 Glassmorphic Design & Animations
+|   +-- app.js                    Frontend logic, Chat state, API fetching
 |
 +-- dataset/
-|   +-- data_generator.py         Creates the synthetic Q&A training data
 |   +-- dataloader.py             Implements BPE Tokenizer for PyTorch
-|   +-- school_business_data.jsonl  The generated training dataset
 |
 +-- model/
 |   +-- transformer.py            The 7.2M Parameter Transformer architecture
-|
-+-- training/
-|   +-- train.py                  The training loop (AdamW optimizer, checkpoints)
-|
-+-- inference/
-|   +-- chat.py                   Legacy CLI chatbot interface
 |
 +-- checkpoints/                  Saved model weights
 |   +-- micro_llm_epoch_40.pt     Best Local Weights
@@ -73,69 +70,53 @@ Mpr_llm/
 
 ## 4. Hybrid Agentic RAG Architecture
 
-The web app (`app.py`) orchestrates a brilliant three-tier fallback logic for generating answers:
+The backend (`api.py`) utilizes an advanced multi-tier RAG logic with **Dynamic Thresholding**:
 
-### Tier 1: Semantic Vector Retrieval
-The user's query is embedded using `SentenceTransformer('all-MiniLM-L6-v2')`. We compute the cosine similarity against all known facts in our cached `KNOWLEDGE_BASE`. If the confidence score is **>0.50**, the system bypasses AI generation entirely and instantly returns the exact, pre-approved school policy.
+### Tier 1: Semantic Vector Retrieval (Smart Filtering)
+The user's query is embedded using `all-MiniLM-L6-v2`. The system computes cosine similarity against the database (`school_data.json`). 
+- **Top-K Expansion:** Retrieves up to `15` facts to ensure aggregate questions (e.g., "list all fees from class 1 to 10") do not drop data.
+- **Dynamic Thresholding:** Instead of a hard cutoff, the system finds the highest-scoring fact and *only* keeps other facts that score within `0.15` points of it. This prevents the AI from regurgitating unrelated facts just because they share keywords.
 
 ### Tier 2: Agentic Cloud Synthesis (Gemini 2.5 Flash)
-If no perfect match is found, but relevant facts are retrieved, the facts are securely shipped to Google's **Gemini 2.5 Flash** API along with the conversation history. Gemini intelligently synthesizes a conversational, highly accurate answer based *only* on the provided context.
-*(Note: The `google.generativeai` package is explicitly configured to use the `gemini-2.5-flash` model as older models like 1.5/1.0 no longer support the latest generated AI Studio keys).* 
+The retrieved facts are injected into a strict prompt sent to **Google Gemini 2.5 Flash**. The prompt strictly forbids hallucinations and forces the AI to answer *only* using the provided school facts. 
 
-### Tier 3: Generative Local Fallback
-If the user is offline or the API key is removed from the sidebar, the system falls back to the locally trained PyTorch Transformer. It generates the response token-by-token using the weights loaded from `checkpoints/micro_llm_epoch_40.pt`.
-
----
-
-## 5. Tokenizer: BPE (Byte Pair Encoding)
-
-We upgraded from a naive character-level tokenizer to a state-of-the-art **BPE (Byte Pair Encoding)** tokenizer using OpenAI's `tiktoken` (`gpt2` encoding).
-- **Vocabulary Size:** 50,257 tokens.
-- **Advantage:** Words like "school" or "admission" become single tokens rather than 6-9 separate characters, vastly improving the context window efficiency and allowing the model to learn semantic groupings natively.
+### Tier 3: Local Fallback Engine
+If the API key is missing, invalid, or hits a rate limit (429), the system catches the error and instantly falls back to a **Local Engine**. If the query hits the similarity threshold, it returns the exact facts directly to the user (prefixed with "Here is the information:"). If the query is conversational, it routes to our custom **PyTorch Transformer** to generate a response locally without any internet connection.
 
 ---
 
-## 6. Model Architecture: 7.2M Parameter Transformer
+## 5. Local Micro-LLM & Tokenizer
 
-Our local PyTorch model is a **Decoder-Only Transformer**. It implements Causal Self-Attention, GELU activations, and Layer Normalization.
+If the system is forced completely offline, it utilizes a custom-built AI model:
+- **Tokenizer:** BPE (Byte Pair Encoding) via OpenAI's `tiktoken` (Vocab size: 50,257).
+- **Architecture:** Decoder-Only Transformer (7.2M Parameters).
+- **Hyperparameters:** `n_embd = 128`, `n_layer = 4`, `n_head = 4`.
 
-### Key Hyperparameters:
-- `vocab_size` = 50,257 
-- `n_embd` = 128 (Embedding dimension)
-- `n_layer` = 4 (Transformer blocks)
-- `n_head` = 4 (Attention heads)
-- `block_size` = 128 (Context window)
-
-### Parameter Breakdown:
-| Component | Parameters |
-|-----------|-----------|
-| Token Embedding (`wte`) | 50,257 x 128 = 6,432,896 |
-| Positional Embedding (`wpe`) | 128 x 128 = 16,384 |
-| 4x Transformer Blocks | ~800,000 |
-| LM Head | Shared with `wte` (0) |
-| **TOTAL** | **~7.2 Million** |
-
-This optimized size allows it to be extremely lightweight while possessing significantly more capacity than the original 200k prototype.
+This optimized size allows it to run smoothly on standard CPUs alongside the FastAPI server.
 
 ---
 
-## 7. Complete Step-by-Step Run Guide
+## 6. Complete Step-by-Step Run Guide
 
 ### Step 1: Install Dependencies
-Make sure Python 3.10+ is installed. Open a terminal in the project directory:
+Ensure Python 3.10+ is installed. Open a terminal in the project directory:
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 2: Launch the Web App
-The entire system is integrated into a unified Streamlit dashboard:
+### Step 2: Start the Backend Server
+Launch the FastAPI backend using Uvicorn:
 ```bash
-streamlit run app.py
+uvicorn api:app --host 0.0.0.0 --port 8000
+```
+*Note: The server will take 10-15 seconds to load the PyTorch weights and SentenceTransformer models into memory on startup.*
+
+### Step 3: Access the Web App
+Open your web browser and go to:
+```
+http://localhost:8000
 ```
 
-### Step 3: Chat!
-The app will open in your browser (`http://localhost:8501`).
-
-- The app natively caches the SentenceTransformer model on startup for blazing fast hot-reloads.
-- A Gemini API Key is automatically pre-filled in the sidebar for Agentic Cloud mode.
-- To force the app to use the **Local PyTorch Fallback Engine**, simply delete the API key from the sidebar text box and send your message!
+### Step 4: Demo Features
+- **Cloud Mode:** The system uses a placeholder API key in the UI. Make sure a real key is loaded to experience the Gemini 2.5 Flash synthesis.
+- **Offline Resilience:** If the Gemini API fails, notice how the application gracefully falls back to the local retrieval engine without crashing, ensuring stakeholders always receive an answer!
